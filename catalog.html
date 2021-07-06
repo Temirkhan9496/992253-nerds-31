@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header>
+    <H1>Магазин готовых шаблонов</H1>
+    <nav>
+      <a href="index.html">
+        <img src="https://echo.htmlacademy.ru/" width="90" height="80" alt="Нёрдс">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="price.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+  <main>
+
+    <section>
+      <h2>Стоимость:</h2>
+
+      <p><input type="range" min="0" max="100" step="1" value="50"> </p>
+      <div class="filter__cost table">
+        <div class="table-cell"> <span>от</span></div>
+        <div class="table-cell">
+          <input id="priceMin" type="text" value="0" class="form-control">
+        </div>
+        <div class="table-cell"><span>до</span></div>
+        <div class="table-cell">
+          <input id="priceMax" type="text" value="150000" class="form-control">
+        </div>
+        <div class="table-cell"><span>руб</span></div>
+      </div>
+    </section>
+
+    <Section>
+      <h2>Список сетки:</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid-list" value="adaptive" id="filter-adaptation" checked>
+              <label for="filter-adaptation">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid-list" value="fixer" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid-list" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="Slider" id="filter-slider" checked>
+              <label for="filter-sliderr">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Advantages-block" id="Filter-block">
+              <label for="filter-Advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="News" id="filter-News" checked>
+              <label for="filter-News">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+
+    <Section>
+      <h2>Список сайтов</h2>
+
+      <h3>Сортировать:</h3>
+      <ul>
+        <li>
+          <a href="#">По цене</a>
+        </li>
+        <Li>
+          <a>По типу</a>
+        </Li>
+        <li>
+          <a>По названию</a>
+        </li>
+      </ul>
+    </Section>
+
+    <section>
+      <Ul>
+        <Li>
+          <a href="#">
+            <h3>SEDONA</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Информационный сайт для туристов</p>
+          <a href="blank.html">9.900₽</a>
+        </Li>
+        <Li>
+          <a href="#">
+            <h3>PINK APP</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="blank.html">9.900₽</a>
+        </Li>
+        <li>
+          <a href="#">
+            <h3>BARBERSHOP</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Сайт салона красоты. Для мужчин, да.</p>
+          <a href="blank.html">9.900₽</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>MISHKA</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Интернет-магазин вязаных игрушек</p>
+          <a href="blank.html">9.900₽</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>A PLUS</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Лендинг курсов повышения квалификации</p>
+          <a href="blank.html">9.900₽</a>
+        </li>
+        <li>
+          <a href="#">
+            <h3>КВАСТ</h3>
+            <img src="#" width="210" height="200" alt="">
+          </a>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <a href="blank.html">9.900₽</a>
+        </li>
+      </Ul>
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Давайте дружить,это выгодно!</h2>
+
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <section>
+
+    <h2>Напишите Нам</h2>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="text">Ваше имя</label><br>
+      <input id="text" type="text" name="name" placeholder="Имя Фамилия"><br>
+      <label for="login-login">Ваш email</label><br>
+      <input id="login-login" type="email" name="email" placeholder="email@example.com"><br>
+      <label for="comment">Текст письма:</label><br>
+      <input id="comment" type="text" name="comment" placeholder="В свободной форме"><br>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
