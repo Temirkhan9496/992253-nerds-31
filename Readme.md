@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Temirkhan Saidov](https://up.htmlacademy.ru/htmlcss/31/user/992253).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Рыбаков](https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
