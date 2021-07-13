@@ -1,0 +1,76 @@
+
+:root {
+  --basic-grey: #888888;         /*Фон шапки */
+  --basic-black-dark: #000000;   /* Основной текст */
+  --basic-white: #ffffff;        /*Фон обратная связь (карточка) */
+  --basic-pink: #FB565A;         /*цвет кнопки "заказать"*/
+  --basic-green: #00CA74;        /*цвет кнопки "заказать"*/
+  --basic-yellow: #EFC849;       /*цвет кнопки "заказать"*/
+  --basic-white1: #EEEEEE;        /*Фон основной */
+  --basic-dark-grey: #4D4D4D;     /* (фильтр)сетка кнопка*/
+  --basic-white2: #E1E1E1;        /*кргулый для соц сетей*/
+
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-white1);
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 63px;
+  line-height: 30px;
+  color: var(--basic-black-dark);
+  background-color: var(--basic-grey);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-grey);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-grey);
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black-dark);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-dark);
+}
+
+
