@@ -1,4 +1,10 @@
+@font-face{
 
+  font-family: "Roboto";
+  src:
+  url(/fonts/robotobold.woff2)
+
+}
 :root {
   --basic-grey: #888888;         /*Фон шапки */
   --basic-black-dark: #000000;   /* Основной текст */
@@ -23,7 +29,6 @@ body {
   color: var(--basic-black-dark);
   text-transform: uppercase;
   background-color: var(--basic-white1);
-  background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -40,7 +45,7 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  font-size: 63px;
+  font-size: 16px;
   line-height: 30px;
   color: var(--basic-black-dark);
   background-color: var(--basic-grey);
@@ -58,6 +63,171 @@ img {
   background-color: var(--basic-grey);
 }
 
+/* Каталог 2 я страница*/
+.main-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+  align-items: center;
+  color: #000000;
+}
+     /*Хлебные крошки каталога*/
+
+.site-navigation {
+
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black-dark);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  text-decoration: underline;
+}
+
+.site-navigation-current {
+  color: var(--basic-black-dark);
+}
+
+/* Филтр ползунок (каталог) */
+
+.filter-form legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  color: var(--basic-black-dark);
+
+}
+.table-cell {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+
+}
+
+/* Сетка (каталог) */
+
+.mesh-filter-form legend{
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.mesh-filter-list {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mesh-filter-item {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*Особенности( каталог)*/
+
+.advantage-item{
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+
+}
+
+.advantage-input-checkbox:hover + label,
+.advantage-input-checkbox:focus + label {
+  color: var(#4D4D4D);
+}
+
+.mesh-filter-form, button {
+  width: 260px;
+  height: 50px;
+  background: #EEEEEE;
+  border-radius: 3px;
+}
+
+  /* Список сайтов (каталог) */
+
+  .sorting, p{
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+
+  }
+  .sorting-list {
+    list-style: none;
+  }
+  .sorting-item-pice{
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000000;
+
+  }
+  .sorting-item:focus{
+    color: #888888;
+  }
+
+/* Сайты (каталог) */
+.various-sites-list{
+  list-style: none;
+}
+.various-sites-item a{
+  color: #000000;
+
+}
+
+.various-sites-item p{
+
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #666666;
+}
+
+.various-sites-list, button{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 620px;
+  top: 1014px;
+  background: #FB565A;
+  border-radius: 3px;
+}
+
+.pages-list{
+  list-style: none;
+}
+
+.pages-item a{
+  color: var(--basic-white);
+  background-color: var( --basic-black-dark);
+}
+.pages-item a:hover,
+.pages-item a:focus,
+.pages-item a:active {
+  background-color: var(--basic-white1);
+}
+
+.pages-item-current a,
+.pages-item-current a:hover,
+.pages-item-current a:focus,
+.pages-item-current a:active {
+  color: var(--basic-black-dark);
+  background-color: var(#EEEEEE);
+}
+
 /* User navigation */
 
 
@@ -73,4 +243,428 @@ img {
   background-color: var(--basic-extra-dark);
 }
 
+/* Features */
 
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* Services */
+
+.services {
+  position: absolute;
+  width: 1100px;
+  height: 347px;
+  left: 140px;
+  top: 625px;
+
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-title-web, .services-title-appl, .services-title-present {
+font-size: 24px;
+line-height: 30px;
+position: absolute;
+width: 138px;
+height: 30px;
+left: 140px;
+top: 796px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+color: #000000;
+
+}
+
+.services, .services-title-web, .button  {
+
+ position: absolute;
+ width: 160px;
+ height: 50px;
+ left: 140px;
+ top: 922px;
+ background: #FB565A;
+ border-radius: 3px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 18px;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.services, .services-title-appl, .button  {
+
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  left: 540px;
+  top: 922px;
+  background: #00CA74;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+ align-items: center;
+ text-align: center;
+ text-transform: uppercase;
+}
+.services, .services-title-present, .button  {
+
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  left: 940px;
+  top: 922px;
+  background: #EFC849;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+ align-items: center;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+/* about-company */
+
+.about-company {
+
+  position: absolute;
+  width: 1174px;
+  height: 413px;
+  left: 140px;
+  top: 1093px;
+
+}
+.about-company {
+  list-style: none;
+}
+
+.about-company {
+  text-align: center;
+}
+
+.descriptions{
+  position: absolute;
+  left: 9.72%;
+  right: 45.07%;
+  top: 45.52%;
+  bottom: 50.81%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  /* or 100% */
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+}
+
+.text-purity{
+  position: absolute;
+ left: 9.72%;
+ right: 45.42%;
+ top: 50.48%;
+ bottom: 47.54%;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 24px;
+ /* or 150% */
+ display: flex;
+ align-items: center;
+ color: #283136;
+}
+
+.order-title-roster {
+
+  position: absolute;
+ height: 24px;
+ left: 9.72%;
+ right: 69.03%;
+ top: calc(50% - 24px/2 + 113px);
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 16px;
+ line-height: 24px;
+ /* identical to box height, or 150% */
+ text-transform: uppercase;
+ color: #283136
+
+}
+
+.order-list {
+  list-style: none;
+}
+
+.order-list-item {
+  text-align: center;
+}
+
+.merit{
+  position: absolute;
+ width: 1174px;
+ height: 413px;
+ left: 140px;
+ top: 1093px;
+}
+
+.merit-list {
+  list-style: none;
+}
+
+.merit-list-item {
+  text-align: center;
+}
+
+.accuracy{
+
+  position: absolute;
+ left: 65.42%;
+ right: 9.72%;
+ top: 54.04%;
+ bottom: 44.99%;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 16px;
+ line-height: 24px;
+/* identical to box height, or 150% */
+
+ display: flex;
+ align-items: center;
+ text-align: center;
+ text-transform: uppercase;
+
+ color: #000000;
+}
+
+   /* Index columns */
+
+.index-columns{
+
+  color: var(--basic-black);
+  background-color: var(--basic-white1);
+  background-image: url("img/nerds.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.index-columns h2 {
+  font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 45px;
+ line-height: 45px;
+ /* or 100% */
+ display: flex;
+ align-items: center;
+
+ color: #000000;
+
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
+ .partners {
+
+  color: var(--basic-black);
+  background-color: var(--basic-white1);
+  background-position: 0 0;
+  background-repeat: repeat;
+  position: absolute;
+  width: 1159px;
+  height: 184px;
+  left: 140px;
+  top: 1579px;
+
+ }
+
+ .partners-list {
+  list-style: none;
+}
+
+.partners-item {
+  text-align: center;
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+.contacts {
+
+  position: absolute;
+  left: 9.72%;
+  right: 68.12%;
+  top: 12.98%;
+  bottom: 12.98%;
+  background: #FFFFFF;
+  background-color: var(--basic-white1);
+  background-image: url("img/map.png");
+  background-position: 0 0;
+}
+
+.contact-address{
+
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 30px;
+ align-items: center;
+ text-transform: uppercase;
+}
+ .contacts .button {
+
+  position: absolute;
+  left: 13.19%;
+  right: 71.6%;
+  top: 63.7%;
+  bottom: 24.28%;
+  background: #FB565A;
+  border-radius: 3px;
+ }
+
+ .relations {
+
+  position: absolute;
+  width: 960px;
+  height: 590px;
+  left: 240px;
+  top: 1706px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  align-items: center;
+ }
+
+ .Feedback {
+  font-family: Roboto;
+  font-size: 45px;
+  line-height: 53px;
+  color: #000000;
+
+ }
+ .relations-name input{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  border: 2px solid var(#444444);
+  background-color: transparent;
+
+ }
+ .relations-mail input{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  border: 2px solid var(#444444);
+  background-color: transparent;
+ }
+ .relations-description input{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  border: 2px solid var(#444444);
+  background-color: transparent;
+
+ }
+ .relations input:focus{
+  border-color: var(#444444);
+ }
+
+   /* Main footer */
+
+   .main-footer {
+    color: var(--basic-white);
+    background-color: var(--basic-white1);
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+  .footer-description{
+     font-size: 36px;
+     line-height: 36px;
+     align-items: center;
+     color: #000000;
+     font-family: Roboto;
+  }
+
+  .footer-list{
+    list-style: none;
+  }
+
+  .footer-item{
+    text-align: center;
+  }
+
+  .footer-social{
+    text-align: center;
+  }
+
+  .social-button{
+    position: absolute;
+    width: 81px;
+    height: 81px;
+     left: 140px;
+    top: 2327px;
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+    background-image: url("img/VKICONKA.png");
+  }
+  .social-button{
+    background-image: url("img/FACEBOOKICONKA.png");
+  }
+  .social-button{
+    background-image: url("img/INSTICON.png");
+  }
